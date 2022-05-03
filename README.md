@@ -9,10 +9,13 @@
 
 ## 3. XR Tool Kit 기초 (05/03)
 ### A. XR Origin 
-
+-
 ### B. Action 
-
+-
 ### C. XR Interaction Manager
+-
+
+
 
 ### Reference 
 1. https://www.youtube.com/watch?v=G6EW5YBAjBs (기초 XR ToolKit 사용 영상)
