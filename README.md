@@ -6,3 +6,7 @@
 ## 2. 설명하는 내용
 - XR Toolkit에서 제공하는 기능에 대해서 학습하도록 한다. 
 - VR 환경에서 그래픽 관련 요소들을 어떻게 편집하는지 안다.
+
+
+### Reference 
+1. https://www.youtube.com/watch?v=G6EW5YBAjBs (기초 XR ToolKit 사용 영상)
