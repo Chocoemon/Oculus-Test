@@ -7,9 +7,8 @@
 - Unity.XR.CoreUtils namespace에 속해있음
 - 운동에 의해 조작되는걸 저장해둠.
 - 여기에 속해있는 카메라는 Device에서 Rotation과 position 값을 받아와 지속적으로 값을 업데이트함 
-
-### A.1 XR Rig
--
+- 하위 오브젝트에 있는 컴포넌트 중 Tracked Pose Driver라는 컴포넌트가 있는데, 이는 Device로 부터 위치를 받아와
+이 컴포넌트가 속해있는 GameObject의 transform을 변환시켜주는 역할을 함!
 
 ### B. XR Interaction Manager
 ![XR interaction Manager](https://user-images.githubusercontent.com/68228162/166638160-1e917f84-ec31-474d-8372-bf171a4aac44.jpg)
@@ -22,4 +21,5 @@
 2. https://www.youtube.com/watch?v=G6EW5YBAjBs (Scene 제작 시 참고)
 3. https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.0/api/Unity.XR.CoreUtils.XROrigin.html
 4. https://gongdolhoon.tistory.com/entry/UnityXR-Interaction-Toolkit-VR-2-VR-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0
+5. https://docs.unity3d.com/2018.3/Documentation/ScriptReference/SpatialTracking.TrackedPoseDriver.html (Track pose controller)
 
