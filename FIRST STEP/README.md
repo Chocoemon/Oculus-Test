@@ -17,7 +17,7 @@
 - 기본적으로 Interaction Manager를 생성하지 않는다면, 유니티에서 알아서 생성해줌 
 - Ray의 경우, XR Interactor Line visual에서 LineRenderer를 이용해 만들어냄! 색상이 촌스럽거나 패턴, 두께를 조정하고 싶으면 여기에 손을 대면 된다. 
 
-### C. XRInteractor
+### C. XR Interactor
 #### Reference 
 1. https://docs.unity3d.com/Manual/XR.html
 2. https://www.youtube.com/watch?v=G6EW5YBAjBs (Scene 제작 시 참고)
