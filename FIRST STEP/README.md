@@ -14,10 +14,16 @@
 ![XR interaction Manager](https://user-images.githubusercontent.com/68228162/166638160-1e917f84-ec31-474d-8372-bf171a4aac44.jpg)
 
 - Interactor와 Interactable이 상호작용하기 위해서는 Interaction Manager가 필요함!
+- 여기서 Interactor는 컨트롤러를, Interactable은 상호작용을 받는 물체를 의미함
 - 기본적으로 Interaction Manager를 생성하지 않는다면, 유니티에서 알아서 생성해줌 
 - Ray의 경우, XR Interactor Line visual에서 LineRenderer를 이용해 만들어냄! 색상이 촌스럽거나 패턴, 두께를 조정하고 싶으면 여기에 손을 대면 된다. 
 
-### C. XR Interactor
+### C. XR Ray Interactor
+- 각 HandController에 붙어 있는 컴포넌트 중 하나 
+-  Interactor used for interacting with interactables at a distance. This is handled via ray casts
+- RayCast가 포물선으로 나가게 할건지, 베지어 곡선에 따라서 나가게 할 건지, 직선으로 나가게 할 건지를 메뉴에서 선택이 가능하다. 
+- 
+
 #### Reference 
 1. https://docs.unity3d.com/Manual/XR.html
 2. https://www.youtube.com/watch?v=G6EW5YBAjBs (Scene 제작 시 참고)
