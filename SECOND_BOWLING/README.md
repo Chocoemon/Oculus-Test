@@ -32,3 +32,7 @@ Action-based behaviors use Actions to indirectly read input from one or more con
 ## 2. Interactor와 Interatable의 관계
 - Interactor는 컨트롤러, 즉 물체와 상호작용하기 위한 어떤 장치
 - Interatable은 컨트롤러와 상호작용 가능한 어떠한 물체를 말함 
+
+
+## Reference 
+1. https://mavricresearch.com/2020/11/24/what-you-need-to-know-about-unitys-xr-toolkit-and-its-new-input-system/  (Device based system vs action based system)
