@@ -6,9 +6,8 @@ https://user-images.githubusercontent.com/68228162/167356174-f1a1efcc-bcd0-4c1a-
 
 ## Pre. 필요한 Unity Package
 1. XR Interaction ToolKit
-
 2. OpenXR Plug in
-3. 미리 작성된 XRI Defaulut ToolKit - 라이브러리 따로 Import 해줘야함!
+3. 미리 작성된 Default Input Actions Sample - 라이브러리 따로 Import 해줘야함!
 
 ## 1. XR Origin 
 - 하위 객체로 Camera Offset, Controller 객체들이 여기 속에 들어있음.
