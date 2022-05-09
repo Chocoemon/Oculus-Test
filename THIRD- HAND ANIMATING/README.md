@@ -22,7 +22,8 @@ A. TryGetFeatureValue()
 - 특정 버튼, 터치 입력 또는 조이스틱 축 값을 가져오려면 CommonUsages 클래스를 사용하십시오. CommonUsages는 포지션, 회전 등과 같은 
 - 트래킹 기능을 비롯하여 각 InputFeatureUsage를 XR 입력 매핑 테이블에 포함합니다. 다음 예제 코드는 CommonUsages.triggerButton을 사용하여 
 - 사용자가 현재 특정 InputDevice 인스턴스의 트리거 버튼을 누르고 있는지 감지합니다.
-`bool triggerValue;
+`
+bool triggerValue;
 if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
 {
     Debug.Log("Trigger button is pressed.");
