@@ -2,6 +2,10 @@
 
 ## 학습 목표: 간단한 볼링 게임을 만들어 XR Origin, Interactor, Interactable의 개념에 대해서 학습하고 활용하도록 한다.
 
+## Pre. 필요한 Unity Package
+1. XR Interaction ToolKit
+2. OpenXR Plug in
+
 
 ## 1. XR Origin 
 - 하위 객체로 Camera Offset, Controller 객체들이 여기 속에 들어있음.
