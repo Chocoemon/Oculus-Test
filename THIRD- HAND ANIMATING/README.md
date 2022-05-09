@@ -32,6 +32,29 @@ if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out tri
 }
 `
 
+B. TryGetFeatureUsages()
+ InputDevice.TryGetFeatureUsages 메서드를 사용하여 기기에서 제공하는 전체 InputFeatureUsage 리스트를 가져올 수도 있습니다. 
+ 이 함수는 기능을 설명하는 타입 및 이름 프로퍼티가 포함된 InputFeatureUsage 항목 리스트를 반환합니다. 다음 예시에는 특정 입력 기기에서 제공된 
+ 모든 부울 기능이 열거되어 있습니다.
+ 
+ `
+ var inputFeatures = new List<UnityEngine.XR.InputFeatureUsage>();
+if (device.TryGetFeatureUsages(inputFeatures))
+{
+    foreach (var feature in inputFeatures)
+    {
+        if (feature.type == typeof(bool))
+        {
+            bool featureValue;
+            if (device.TryGetFeatureValue(feature.As<bool>(), out featureValue))
+            {
+                Debug.Log(string.Format("Bool feature {0}'s value is {1}", feature.name, featureValue.ToString()));
+            }
+        }
+    }
+}
+`
+
 ## 2. InputDeviceCharacteristics 
 - A set of bit flags describing InputDevice characteristics.
 - 그니까, 이 InputDevice가 어떤 타입인지를 알 수 있게 해주는 Bit Flag라고 생각하면 됨!
