@@ -24,7 +24,7 @@ A. TryGetFeatureValue()
 - 사용자가 현재 특정 InputDevice 인스턴스의 트리거 버튼을 누르고 있는지 감지합니다.
 
 
-`
+`c#
 bool triggerValue;
 if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
 {
@@ -37,7 +37,7 @@ B. TryGetFeatureUsages()
  이 함수는 기능을 설명하는 타입 및 이름 프로퍼티가 포함된 InputFeatureUsage 항목 리스트를 반환합니다. 다음 예시에는 특정 입력 기기에서 제공된 
  모든 부울 기능이 열거되어 있습니다.
  
- `
+ ` c#
  var inputFeatures = new List<UnityEngine.XR.InputFeatureUsage>();
 if (device.TryGetFeatureUsages(inputFeatures))
 {
