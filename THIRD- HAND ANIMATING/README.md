@@ -23,11 +23,11 @@ A. TryGetFeatureValue()
 - 트래킹 기능을 비롯하여 각 InputFeatureUsage를 XR 입력 매핑 테이블에 포함합니다. 다음 예제 코드는 CommonUsages.triggerButton을 사용하여 
 - 사용자가 현재 특정 InputDevice 인스턴스의 트리거 버튼을 누르고 있는지 감지합니다.
 `bool triggerValue;
-`if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
-`{
-`    Debug.Log("Trigger button is pressed.");
-`}
-
+if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
+{
+    Debug.Log("Trigger button is pressed.");
+}
+`
 ## 2. InputDeviceCharacteristics 
 - A set of bit flags describing InputDevice characteristics.
 - 그니까, 이 InputDevice가 어떤 타입인지를 알 수 있게 해주는 Bit Flag라고 생각하면 됨!
