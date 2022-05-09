@@ -35,3 +35,4 @@ Action-based behaviors use Actions to indirectly read input from one or more con
 
 ## Reference 
 1. https://mavricresearch.com/2020/11/24/what-you-need-to-know-about-unitys-xr-toolkit-and-its-new-input-system/  (Device based system vs action based system)
+2. https://docs.unity3d.com/Manual/xr_input.html
