@@ -12,10 +12,25 @@ XR.Input.CommonUsages을 참조하십시오.
 InputFeatureUsage를 검지손가락이 제어하는 단일 축 입력으로 정의합니다. InputFeatureUsage를 사용하여 해당 이름으로 trigger 상태를 
 가져올 수 있으므로 기존 Unity 입력 시스템에 대해 축(또는 일부 XR 플랫폼의 버튼)을 설정할 필요가 없습니다.
 
+- XR.InputDevices 클래스를 사용하여 현재 XR 시스템과 연결된 입력 기기에 액세스할 수 있습니다. 연결된 모든 기기의 리스트를 가져오려면 
+ InputDevices.GetDevices를 사용하십시오.
 
-XR 입력 매핑
+- 입력 기능에 Access를 가능하게 해주는 함수 ( 버튼이 눌렸는지 안눌렸는지, 조이스틱 축이 돌아가고 있는지 안돌아가고 있는지) 
+A. TryGetFeatureValue()
+- 특정 기능 값을 검색해서 가져오면 true를 반환합니다.
+- 현재 기기가 특정 기능을 지원하지 않거나, 기기가 유효하지 않은 경우(예: 컨트롤러 비활성) false를 반환합니다
+- 특정 버튼, 터치 입력 또는 조이스틱 축 값을 가져오려면 CommonUsages 클래스를 사용하십시오. CommonUsages는 포지션, 회전 등과 같은 
+- 트래킹 기능을 비롯하여 각 InputFeatureUsage를 XR 입력 매핑 테이블에 포함합니다. 다음 예제 코드는 CommonUsages.triggerButton을 사용하여 
+- 사용자가 현재 특정 InputDevice 인스턴스의 트리거 버튼을 누르고 있는지 감지합니다.
+`bool triggerValue;
+`if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out triggerValue) && triggerValue)
+`{
+`    Debug.Log("Trigger button is pressed.");
+`}
 
-
+## 2. InputDeviceCharacteristics 
+- A set of bit flags describing InputDevice characteristics.
+- 그니까, 이 InputDevice가 어떤 타입인지를 알 수 있게 해주는 Bit Flag라고 생각하면 됨!
 
 ## Reference 
 1. https://docs.unity3d.com/kr/2020.3/Manual/xr_input.html (Input Device 설명) 
