@@ -29,6 +29,7 @@ if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out tri
     Debug.Log("Trigger button is pressed.");
 }
 `
+
 ## 2. InputDeviceCharacteristics 
 - A set of bit flags describing InputDevice characteristics.
 - 그니까, 이 InputDevice가 어떤 타입인지를 알 수 있게 해주는 Bit Flag라고 생각하면 됨!
